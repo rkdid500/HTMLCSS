@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LG 생활건강</title>
+  <style>
+    *{margin: 0;padding: 0;}
+    ul{list-style: none;}
+    a{text-decoration: none;}
+    .wrap{width: 1370px; height: 406px; margin:50px auto;}
+    .wrap ul{display: flex;}
+    .wrap ul li{ position: relative; justify-content: space-between;}
+    .wrap ul li .text{position: absolute; left: 5%; top: 10%; color: #fff;}
+    .wrap ul li .text p:first-child{font-size: 18px; opacity: 0;}
+    .wrap ul li .text p:last-child{font-size: 30px; font-weight: bold; opacity: 1;}
+    .wrap ul li:hover .text p{opacity: 1;}
+
+
+    .wrap ul li:hover >.wrap ul li img:hover{flex-basis: 60%;} 
+    .wrap ul li:hover >.wrap ul li img:not(hover){flex-basis: 30%;}
+
+
+
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <ul>
+      <li>
+        <a href="#"><img src="./images/new_esg_img1.jpg" alt="lg"></a>
+        <div class="text">
+          <p>LG생활건강이만드는</p>
+          <p>지속 가능한 삶</p>
+        </div>
+      </li>
+      <li>
+        <a href="#"><img src="./images/new_esg_img2.jpg" alt="lg"></a>
+        <div class="text">
+          <p>지구를 물려주기 위한</p>
+          <p>우리의 약속</p>
+        </div>
+      </li>
+      <li>
+        <a href="#"><img src="./images/new_esg_img3.jpg" alt="lg"></a>
+        <div class="text">
+          <p>고객의 건강과 안전을</p>
+          <p>지키는 열정</p>
+        </div>
+      </li>
+      <li>
+        <a href="#"><img src="./images/new_esg_img4.jpg" alt="lg"></a>
+        <div class="text">
+          <p>공평하고 행복한 세상을 만들기 위한</p>
+          <p>나눔과 포용</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</body>
+</html>

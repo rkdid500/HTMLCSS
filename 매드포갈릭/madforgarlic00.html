@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mad for Garlic</title>
+  <style>
+    *{margin: 0;padding: 0;}
+    ul{list-style: none;}
+    a{text-decoration: none; color: #fff;}
+    .list{width: 1504px; margin: 0 auto;}
+    .list>ul{display: flex; flex-wrap: wrap; font-size: 0;}
+    .list>ul>li{position: relative;}
+    .list>ul>li .over{font-size: 16px; position: absolute; left: 0; top: 0; display: flex; justify-content: center; align-items: center; width: 100%; height: 100%; text-align: center; background: rgba(0,0,0,0); transition: 0.5s;}
+    .list>ul>li:hover .over{background: rgba(0,0,0,0.5 );}
+    .list>ul>li .over p{color: #fff; text-transform: uppercase;}
+    .list>ul>li .over .inner{transform: translateY(0); transition: 0.5s;}
+    .list>ul>li .over .inner p:first-child{opacity: 0; transition: 0.5s 0.2s;}
+    .list>ul>li .over .inner a{opacity: 0; transition: 0.5s 0.2s;}
+    .list>ul>li:hover .over .inner p:first-child{opacity: 1;}
+    .list>ul>li:hover .over .inner a{opacity: 1;}
+    .list>ul>li:hover .over .inner{transform: translateY(-20px);}
+  </style>
+</head>
+<body>
+  <div class="list">
+    <ul>
+      <li>
+        <img src="./images/madforgarlic1.png" alt="mad01">
+        <div class="over">
+          <div class="inner">
+            <p><img src="./images/m-icon_brand.png" alt="brand"></p>
+            <p>BREAD & STARTER</p>
+            <a href="#">자세히 보기</a>
+          </div>
+        </div>
+      </li>
+      <li>
+        <ul>
+          <li><img src="./images/madforgarlic2.png" alt="mad02"></li>
+          <li><img src="./images/madforgarlic3.png" alt="mad03"></li>
+        </ul>
+      </li>
+      <li><img src="./images/madforgarlic4.jpg" alt="mad04">
+        <div class="over">
+          <div class="inner">
+            <p><img src="./images/m-icon_starter.png" alt="salad"></p>
+            <p>SALAD</p>
+            <a href="#">자세히 보기</a>
+          </div>
+        </div>
+      </li>
+      <li><img src="./images/madforgarlic5.png" alt="mad05">
+        <div class="over">
+          <div class="inner">
+            <p><img src="./images/m-icon_pasta.png" alt="pasta"></p>
+            <p>PASTA</p>
+            <a href="#">자세히 보기</a>
+          </div>
+        </div>
+      </li>
+      <li><img src="./images/madforgarlic6.jpg" alt="mad06">
+        <div class="over">
+          <div class="inner">
+            <p><img src="./images/m-icon_pasta.png" alt="pasta"></p>
+            <p>PIZZA</p>
+            <a href="#">자세히 보기</a>
+          </div>
+        </div>
+      </li>
+      <li><img src="./images/madforgarlic7.jpg" alt="mad07">
+        <div class="over">
+          <div class="inner">
+            <p><img src="./images/m-icon_ricerisotto.png" alt="ricerisotto"></p>
+            <p>RICE & RISOTTO</p>
+            <a href="#">자세히 보기</a>
+          </div>
+        </div>
+      </li>
+      <li><img src="./images/madforgarlic8.jpg" alt="mad08">
+        <div class="over">
+          <div class="inner">
+            <p><img src="./images/m-icon_steak.png" alt="steak"></p>
+            <p>STEAK</p>
+            <a href="#">자세히 보기</a>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</body>
+</html>
