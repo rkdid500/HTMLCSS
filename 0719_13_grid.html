@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .wrap{width: 1800px; height: 824px; display: grid; margin: 50px auto;
+      grid-template-columns: 864px 432px 432px;
+      grid-template-rows: 400px 400px;
+      gap: 20px;
+    }
+    .wrap > div img{width: 100%; height: 100%; object-fit: cover; border-radius: 20px;}
+
+    .wrap>.text h1{font-size: 64px;}
+    .wrap>.text strong{font-size: 24px; color: #00a287;}
+    .wrap>.text p{font-size: 20px; color: #5d5d5d;}
+
+
+    .item1{grid-column: 1; grid-row: 2;}
+    .item2{grid-column: 2; grid-row: 1;}
+    .item3{grid-column: 2; grid-row: 2;}
+    .item4{grid-column: 3; grid-row: 1;}
+    .item5{grid-column: 3; grid-row: 2;}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="text">
+      <h1>PROGRAM</h1>
+      <p><strong>KAIST GGGS</strong>에서는 녹색성장과 지속가능성 문제해결을 위해<br>
+      탄소중립기후기술 및 정책·금융에 대한 통섭적인 이해를 갖춘<br> 
+      국가 핵심인재를 양성합니다.</p>
+    </div>
+    <div class="item1"><a href="#"><img src="./images/sec03_tab03.png" alt="">석사과정</a></div>
+    <div class="item2"><a href="#"><img src="./images/sec03_tab01.png" alt="">박사과정</a></div>
+    <div class="item3"><img src="./images/sec03_thumb.png" alt=""></div>
+    <div class="item4"><a href="#"><img src="./images/sec03_tab02.png" alt="">군학 프로그램</a></div>
+    <div class="item5"><a href="#"><img src="./images/sec03_tab04.png" alt="">외국인 전형</a></div>
+  </div>
+</body>
+</html>

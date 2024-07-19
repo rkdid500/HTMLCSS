@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid</title>
+  <style>
+    *{margin: 0;padding: 0;}
+    #wrap{width: 1400px; margin: 0 auto; display: grid;
+    grid-template-columns: 215px 22px 215px 215px 22px 215px;
+    grid-template-rows: 215px 11px 11px 215px;
+    }
+    #wrap > div img{width: 100%; height: 100%; object-fit: cover;}
+
+    .img1{ grid-column: 1 / span 3; grid-row: 1 / span 2;}
+    .img2{ grid-row: 3; grid-column: 1;}
+    .img3{grid-row: 3; grid-column: 3;}
+    .img4{grid-row: 1 / span 4;}
+    .img7{grid-row: 3; grid-column: 5 / span 3;}
+    .img8{grid-row: 1 / span 4;}
+  </style>
+</head>
+<body>
+  <div id="wrap">
+    <div class="img1"><img src="./image/202301.jpg" alt="img1"></div>
+    <div class="img2"><img src="./image/202302.jpeg" alt="img2"></div>
+    <div class="img3"><img src="./image/202303.jpeg" alt="img3"></div>
+    <div class="img4"><img src="./image/202304.jpg" alt="img4"></div>
+    <div class="img5"><img src="./image/202305.jfif" alt="img5"></div>
+    <div class="img6"><img src="./image/202306.jpeg" alt="img6"></div>
+    <div class="img7"><img src="./image/202307.jpeg" alt="img7"></div>
+    <div class="img8"><img src="./image/202308.jpeg" alt="img8"></div>
+  </div>
+</body>
+</html>
