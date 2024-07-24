@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{margin: 0;padding: 0;}
+    ul{list-style: none;}
+    .car{width: 1180px; margin: 0 auto;}
+    .car > ul{display: flex; gap: 20px;}
+    .car ul li{position: relative; width: calc(90% / 6);}
+    .car ul li img{height: 100%;}
+    .car ul li:nth-child(1) img,.car ul li:nth-child(3) img,.car ul li:nth-child(5) img{height: 620px;}
+    .car ul li:nth-child(2) img,.car ul li:nth-child(4) img,.car ul li:nth-child(6) img{height: 480px;}
+    .car ul li p{position: absolute; left: 30px; top: 50px; text-align: center; color: #fff; line-height: 680px; font-size: 24px; font-weight: bold;}
+  </style>
+</head>
+<body>
+  <div class="car">
+    <ul>
+      <li>
+        <img src="./images/main b01.jpg" alt="main">
+        <p>
+          팬데믹 이전으로 부활한 CES 2024
+        </p>
+      </li>
+      <li>
+        <img src="./images/main b02.jpg" alt="main">
+        <p>
+          닛산, 항상 도전한다.
+        </p>
+      </li>
+      <li>
+        <img src="./images/main b03.jpg" alt="main">
+        <p>
+          포뮬러 E 백스테이지
+        </p>
+      </li>
+      <li>
+        <img src="./images/main b04.jpg" alt="main">
+        <p>
+          지속 가능한 환경을 위한<br>지속 불가능한 규제
+        </p>
+      </li>
+      <li>
+        <img src="./images/main b05.jpg" alt="main">
+        <p>
+          포뮬러 E 시즌 10 프리뷰
+        </p>
+      </li>
+      <li>
+        <img src="./images/main b06.jpg" alt="main">
+        <p>
+          챗GPT 이후<br>2024년 우리가 주목할 기술
+        </p>
+      </li>
+    </ul>
+  </div>
+</body>
+</html>
