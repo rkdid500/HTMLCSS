@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{margin: 0;padding: 0;}
+    ul{list-style: none;}
+    a{text-decoration: none;}
+    ul.card{width: 100%; max-width: 1600px; margin: 0 auto; display: flex; flex-wrap: wrap; justify-content: center; transition: 0.5s ease-in;}
+    ul.card li{flex: 1 0 20%; height: 360px; transition: 0.5s; position: relative; overflow: hidden;}
+    ul.card li a{display: block; width: 100%; height: 100%; background-size: cover; transform: scale(1); transition: 0.5s;} 
+    ul.card li a p{position: relative; z-index: 1;}
+    ul.card li:nth-child(1) a{background-image: url(./images/main_bg1.jpg);}
+    ul.card li:nth-child(2) a{background-image: url(./images/main_bg2.png);}
+    ul.card li:nth-child(3) a{background-image: url(./images/main_bg3.jpg);}
+    ul.card li:nth-child(4) a{background-image: url(./images/main_bg4.jpg);}
+    ul.card li:hover a{transform: scale(1.2);}
+    ul.card li a::after{content: ""; position: absolute; left: 0;top: 0; width: 100%; height: 100%; opacity: 0;}
+    ul.card li:nth-child(1) a::after{background-color: rgba(0,163,241,0.84);}
+    ul.card li:nth-child(2) a::after{background-color: rgba(219,92,41,0.79);}
+    ul.card li:nth-child(3) a::after{background-color: rgba(139,185,6,0.76);}
+    ul.card li:nth-child(4) a::after{background-color: rgba(0,163,241,0.64);}
+    ul.card li:hover a::after{opacity: 1;}
+
+    @media screen and (max-width:1530px) {
+      ul.card{max-width: 1280px;}
+      ul.card li{background-size: cover;}
+      ul.card li:hover{background-size: cover;}
+      ul.card li:hover a::after{opacity: 0;}
+    }
+    @media screen and (max-width:1024px) {
+      ul.card{width: 90%;}
+      ul.card li{flex: 1 0 40%;}
+    }
+    @media screen and (max-width:768px) {
+      ul.card li{flex: 1 0 50%; height: 175px;}
+    }
+    @media screen and (max-width:1024px) {
+      ul.card{width: 90%;}
+      ul.card li{flex: 1 0 50%;}
+    }
+  </style>
+</head>
+<body>
+  <ul class="card">
+    <li>
+      <a href="#">
+        <p>화학</p>
+        <p>언제나 편리하게</p>
+        <p><img src="./images/main_sec01_card_list_arrow.svg" alt="화살표"></p>
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <p>식품</p>
+        <p>누구나 풍요롭게</p>
+        <p><img src="./images/main_sec01_card_list_arrow.svg" alt="화살표"></p>
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <p>의약바이오</p>
+        <p>오래도록 건강하게</p>
+        <p><img src="./images/main_sec01_card_list_arrow.svg" alt="화살표"></p>
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <p>패키징</p>
+        <p>어디서나 즐겁게</p>
+        <p><img src="./images/main_sec01_card_list_arrow.svg" alt="화살표"></p>
+      </a>
+    </li>
+  </ul>
+</body>
+</html>

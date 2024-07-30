@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{margin: 0;padding: 0;}
+    ul{list-style: none;}
+    a{text-decoration: none; }
+    .wrap{width: 90%; max-width: 1200px; height: 360px; margin: 50px auto;}
+    .wrap ul{display: flex; flex-wrap: wrap;justify-content: space-between; align-items: center; gap: 20px;}
+    .wrap ul li{width: 240px; height: 360px;}
+    .wrap ul li .text{margin-left: 30px;}
+    .wrap ul li a{color: #fff; display: block; font-size: 30px; font-weight: bold; line-height: 50px; margin-top: 20px;}
+    .wrap ul li p{color: #fff; font-size: 16px; font-weight: bold;}
+    .wrap ul li:nth-child(1){background-image: url(./images/수영.png); background-size: cover;}
+    .wrap ul li:nth-child(2){background-image: url(./images/볼링.png);background-size: cover;}
+    .wrap ul li:nth-child(3){background-image: url(./images/헬스.png);background-size: cover;}
+    .wrap ul li:nth-child(4){background-image: url(./images/스피닝.png);background-size: cover;}
+
+    @media screen and (max-width:1200px) {
+      .wrap{width: 100%; justify-content: center; gap: 20px;}
+    }
+    @media screen and (max-width:820px) {
+      .wrap{width: 100%;}
+    }
+    @media screen and (max-width:510px) {
+      .wrap{width: 100%;}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <!-- <p>강좌종목안내</p> -->
+    <ul>
+      <li>
+        <div class="text">
+          <a href="#">수영</a>
+          <p>#다이어트 #유산소 #재활</p>
+        </div>
+      </li>
+      <li>
+        <div class="text">
+          <a href="#">볼링</a>
+          <p>#여가활동 #구기종목</p>
+        </div>
+      </li>
+      <li>
+        <div class="text">
+          <a href="#">헬스</a>
+          <p>#다이어트 #체력증진 #근력운동</p>
+        </div>
+      </li>
+      <li>
+        <div class="text">
+          <a href="#">스피닝</a>
+          <p>#단기다이어트 #유산소</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</body>
+</html>
