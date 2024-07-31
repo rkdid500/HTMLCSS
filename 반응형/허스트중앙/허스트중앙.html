@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+  <style>
+    *{margin: 0;padding: 0;}
+    a{text-decoration: none;}
+    .wrap{width: 100%; max-width: 1200px; margin: 0 auto;  flex-wrap: wrap;display: flex;align-items: center; justify-content: space-between;}
+    .wrap .text{font-family: Noto Sans KR, 돋움, sans-serif;}
+    .wrap .text p:nth-child(1){color: #111; font-size: 20px; font-weight: bold;}
+    .wrap .text p:nth-child(2){color: #111; font-size: 36px; margin-top: 24px; font-weight: bold;}
+    .wrap .text p:nth-child(3){color: #666; font-size: 18px; margin-top: 20px;}
+    .wrap .text a span{display: inline-block; margin-top: 30px; border: 1px solid #000; padding: 10px 20px; color: #000;}
+    /* .wrap .text span::after{content:""; background-image: url(./images/link-btn-arrow.png); position: absolute; left: 0; top: 50%; width: 20px; height: 20px;} */
+    .wrap img{width: 680px; height: 580px;}
+
+    @media screen and (max-width:1024px) {
+      .wrap{flex-direction: column;}
+    }
+    @media screen and (max-width:768px) {
+      .wrap .text{width: 50%; height: 100%;}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="text">
+      <p>엘르보이스</p>
+      <p>여성의 삶,<br>레퍼런스가 필요할 때</p>
+      <p>작가, 북튜버, 아나운서, 기자 싱어송라이터까지!<br>동시대를 살아가는 여성들의 에세이 뉴스레터를 구독해보세요.</p>
+      <a href="a"><span>바로가기</span></a>
+    </div>
+    <img src="./images/theme-service_ellevoice.png" alt="img">
+  </div>
+</body>
+</html>
