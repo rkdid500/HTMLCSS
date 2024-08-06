@@ -35,5 +35,5 @@ a{text-decoration: none; color: #000;}
 .wrap section .content{width: 1020px; height: 44px;}
 .wrap section .content > a{width: 170px; height: 100%;}
 .wrap section .content .menu{width: 850px; height: 100%; margin: 0 auto;}
-.wrap section .content .menu ul{ float: right;}
-.wrap .content .menu ul li{}
+.wrap section .content .menu ul{}
+.wrap .content .menulist{display: flex; align-items: center; gap: 20px;}
