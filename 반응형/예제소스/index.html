@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{margin: 0;padding: 0;}
+    .wrap{max-width: 1080px; width: 90%; margin: 0 auto; display: grid; gap: 15px;}
+    img{width: 100%; border-radius: 5px;}
+
+
+    .gallery01{grid-column: 1; grid-row: 1;}
+    .gallery02{grid-column: 2; grid-row: 1;}
+    .gallery03{grid-column: 3; grid-row: 1;}
+    .gallery04{grid-column: 4; grid-row: 1;}
+    .gallery05{grid-column: 1; grid-row: 2;}
+    .gallery06{grid-column: 2; grid-row: 2;}
+    .gallery07{grid-column: 3; grid-row: 2;}
+    .gallery08{grid-column: 4; grid-row: 2;}
+    .gallery09{grid-column: 1; grid-row: 3;}
+    .gallery10{grid-column: 2; grid-row: 3;}
+    .gallery11{grid-column: 3; grid-row: 3;}
+    .gallery12{grid-column: 4; grid-row: 3;}
+
+    @media screen and (max-width:960px) {
+    .gallery01{grid-column: 1; grid-row: 1;}
+    .gallery02{grid-column: 2; grid-row: 1;}
+    .gallery03{grid-column: 1; grid-row: 2;}
+    .gallery04{grid-column: 2; grid-row: 2;}
+    .gallery05{grid-column: 1; grid-row: 3;}
+    .gallery06{grid-column: 2; grid-row: 3;}
+    .gallery07{grid-column: 1; grid-row: 4;}
+    .gallery08{grid-column: 2; grid-row: 4;}
+    .gallery09{grid-column: 1; grid-row: 5;}
+    .gallery10{grid-column: 2; grid-row: 5;}
+    .gallery11{grid-column: 1; grid-row: 6;}
+    .gallery12{grid-column: 2; grid-row: 6;}
+    }
+    @media screen and (max-width:770px) {
+      .wrap{display: block;}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="gallery01"><img src="./p_images/sub_gallery_01.jpg" alt="gallery"></div>
+    <div class="gallery02"><img src="./p_images/sub_gallery_02.jpg" alt="gallery"></div>
+    <div class="gallery03"><img src="./p_images/sub_gallery_03.jpg" alt="gallery"></div>
+    <div class="gallery04"><img src="./p_images/sub_gallery_04.jpg" alt="gallery"></div>
+    <div class="gallery05"><img src="./p_images/sub_gallery_05.jpg" alt="gallery"></div>
+    <div class="gallery06"><img src="./p_images/sub_gallery_06.jpg" alt="gallery"></div>
+    <div class="gallery07"><img src="./p_images/sub_gallery_07.jpg" alt="gallery"></div>
+    <div class="gallery08"><img src="./p_images/sub_gallery_08.jpg" alt="gallery"></div>
+    <div class="gallery09"><img src="./p_images/sub_gallery_09.jpg" alt="gallery"></div>
+    <div class="gallery10"><img src="./p_images/sub_gallery_10.jpg" alt="gallery"></div>
+    <div class="gallery11"><img src="./p_images/sub_gallery_11.jpg" alt="gallery"></div>
+    <div class="gallery12"><img src="./p_images/sub_gallery_12.jpg" alt="gallery"></div>
+  </div>
+</body>
+</html>
