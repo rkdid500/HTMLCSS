@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+         @font-face {
+	font-family: "NanumBarunGothic";
+	font-style: normal;
+	font-weight: 200;
+	src: local('NanumBarunGothicExtraLight'), url('../font/NanumBarunGothicExtraLight.ttf') format('truetype'), url('../font/NanumBarunGothicExtraLight.otf') format('opentype');
+    unicode-range: U+AC00-D7A3, U+0030-0039, U+0020-002F, U+003A-0040, U+005B-0060, U+007B-007E;
+}
+@font-face {
+	font-family: "NanumBarunGothic";
+	font-style: normal;
+	font-weight: 300;
+	src: local('NanumBarunGothicLight'), url('../font/NanumBarunGothicLight.ttf') format('truetype'), url('../font/NanumBarunGothicLight.otf') format('opentype');
+    unicode-range: U+AC00-D7A3, U+0030-0039, U+0020-002F, U+003A-0040, U+005B-0060, U+007B-007E;
+}
+@font-face {
+	font-family: "NanumBarunGothic";
+	font-style: normal;
+	font-weight: 400;
+	src: local('NanumBarunGothic'), url('../font/NanumBarunGothic.ttf') format('truetype'), url('../font/NanumBarunGothic.otf') format('opentype');
+    unicode-range: U+AC00-D7A3, U+0030-0039, U+0020-002F, U+003A-0040, U+005B-0060, U+007B-007E;
+}
+@font-face {
+	font-family: "NanumBarunGothic";
+	font-style: normal;
+	font-weight: 700;
+	src: local('NanumBarunGothicBold'), url('../font/NanumBarunGothicBold.ttf') format('truetype'), url('../font/NanumBarunGothicBold.otf') format('opentype');
+    unicode-range: U+AC00-D7A3, U+0030-0039, U+0020-002F, U+003A-0040, U+005B-0060, U+007B-007E;
+}
+
+    *{margin: 0;padding: 0;}
+    ul{list-style: none;}
+    a{text-decoration: none;}
+    p{font-family: 'NanumBarunGothic', 'Nanum Gothic','sans-serif';}
+    p.title{width: 100%; color: #444; font-size: 34px; line-height: 40px; text-align: center; font-weight: 400;}
+    .wrap{max-width: 940px; width: 95%; margin: 50px auto;}
+    .wrap ul{display: flex; margin: 0 auto; gap: 3px;}
+    .wrap ul li{width: 311px;height: 424px;}
+    .wrap ul li:nth-child(1){background-image: url(https://www.shinsegaefood.com/images/management/bg_info_1.jpg); box-shadow: rgba(0,0,0,0.5);}
+    .wrap ul li:nth-child(2){background-image: url(https://www.shinsegaefood.com/images/management/bg_info_2.jpg);}
+    .wrap ul li:nth-child(3){background-image: url(https://www.shinsegaefood.com/images/management/bg_info_3.jpg);}
+    .wrap ul li a{background: rgba(0,0,0,0.6); display: inline-block; width: 100%; height: 100%; padding-top: 145px; box-sizing: border-box;}
+    .wrap ul li p{color: #fff; text-align: center;}
+    .wrap ul li p:first-child{font-size: 30px; font-weight: 700;}
+    .wrap ul li p:last-child{font-size: 15px; padding-top: 16px;}
+    .wrap ul li:hover p:first-child{color: #f29b76;}
+
+    .con{max-width: 940px; width: 100%; height: 180px; margin: 0 auto;}
+    .con .area{width: 100%; height: 100%; background-color: #c76f53;}
+    .con .area a{display: inline-block; width: 100%; height: 100%; padding-top: 40px; box-sizing: border-box; position:relative;}
+    .con .area a p{color: #fff; text-align: center;}
+    .con .area a p:first-child{font-size: 30px; font-weight: bold;}
+    .con .area a p:last-child{font-size: 15px; font-weight: 400; padding-top: 16px;}
+    .con .area a::before{content:""; background-image: url(https://www.shinsegaefood.com/images/management/ico_management_sprits.png); position: absolute; top: 67px; left: 250px; width: 79px; height: 44px;}
+    .con .area a::after{content: ""; position: absolute; top: 73px; right: 280px; width: 32px; height: 32px; background-image: url(https://www.shinsegaefood.com/images/management/ico_management_sprits.png); background-position: -158px 0;}
+  </style>
+</head>
+<body>
+  <p class="title">명확한 비전과 전략으로 최고의 투자 가치를 실현하는 신세계푸드</p>
+  <div class="wrap">
+    <ul>
+      <li>
+        <a href="#">
+          <p>경영정보</p>
+          <p>주주 및 이사회 구성을<br>안내해 드립니다.</p>
+      </a>
+    </li>
+      <li>
+        <a href="#">
+          <p>재무정보</p>
+          <p>영업현황 및 재무제표를<br>안내해 드립니다.</p>
+      </a>
+    </li>
+      <li>
+        <a href="#">
+          <p>주식정보</p>
+          <p>주가정보를<br>안내해 드립니다.</p>
+      </a>
+    </li>
+    </ul>
+  </div>
+  <div class="con">
+    <div class="area">
+      <a href="#">
+        <p>공시 및 공고</p>
+        <p> 결산 공고 및 주주총회 결과를<br>안내해 드립니다.</p>
+      </a>
+    </div>
+  </div>
+</body>
+</html>
