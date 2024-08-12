@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{margin: 0;padding: 0;}
+    ul{list-style: none;}
+    a{text-decoration: none;}
+    .play{max-width: 1903px; width: 100%; display: flex; height: 1896px;}
+    .play .left{width: 773px; height: 953px;}
+    .play .right{width: 474px;}
+    .play .right ul{width: 100%; display: flex; justify-content: space-between; gap: 60px;margin-left: 60px; padding: 77px 0;}
+    .play .right img{width: 473px; height: 592px; object-fit: cover;}
+    .play .right .text{margin-top: 15px; line-height: 35px;}
+    .play .right .text p:nth-child(1){font-size: 16px; font-weight: bold;}
+    .play .right .text p:nth-child(2){font-size: 28px; font-weight: bold;}
+    .play .right .text p:nth-child(3){font-size: 16px;}
+    .play .right .text span{font-weight: bold; float: left;}
+    .play .right .text span::after{content: "|";}
+  </style>
+</head>
+<body>
+  <div class="play">
+    <div class="left">
+      <p><img src="./images/main.jpg" alt=""></p>
+    </div>
+    <div class="right">
+      <ul class="mid">
+        <li>
+          <p><img src="./images/m01.jpg" alt=""></p>
+          <div class="text">
+            <p>PEOPLE</p>
+            <p>이어지는 삶 속에서 새로 발견한 것</p>
+            <p>"나만의 목표를 갖고 작은 시도를 계속 해보는 게 중요해요"</p>
+            <span>박찬종</span><p>크리에이터,패러사이클링 선수</p> 
+          </div>
+        </li>
+        <li>
+          <p><img src="./images/m02.jpg" alt=""></p>
+          <div class="text">
+            <p>PEOPLE</p>
+            <p>잘하고 싶은 마음보다 일단 '시작'하는···</p>
+            <p>"작은 목표를 향해 한 걸음, 한 걸음 내딛다 보면 '끝'도 있더라고요"</p>
+            <span>서귤</span><p>작가</p> 
+          </div>
+        </li>
+      </ul>
+      <ul class="long">
+        <li>
+          <p><img src="./images/m03.jpg" alt=""></p>
+          <div class="text">
+            <p>PEOPLE</p>
+            <p>행복은 아주 작은것에서부터</p>
+            <p>"살아가는 모든 순간, 아이와 같은 마음이 필요해요"</p>
+            <span>누아</span><p>일러스트레이터</p> 
+          </div>
+        </li>
+        <li>
+          <p><img src="./images/m04.jpg" alt=""></p>
+          <div class="text">
+            <p>PEOPLE</p>
+            <p>기사를 쓰는데 이렇게까지</p>
+            <p>"휠체어를 타고 바퀴를 굴리자마자 '내가 알던 세상이 아니구나.' 느꼈어요."</p>
+            <span>남형도</span><p>기자</p> 
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
