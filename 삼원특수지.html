@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 800;
+	font-display: swap;
+	src: local(''), url('../fonts/Pretendard-ExtraBold.subset.woff2') format('woff2'), url('../fonts/Pretendard-ExtraBold.subset.woff') format('woff');
+}
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 700;
+	font-display: swap;
+	src: local(''), url('../fonts/Pretendard-Bold.subset.woff2') format('woff2'), url('../fonts/Pretendard-Bold.subset.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 600;
+	font-display: swap;
+	src: local(''), url('../fonts/Pretendard-SemiBold.subset.woff2') format('woff2'), url('../fonts/Pretendard-SemiBold.subset.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 500;
+	font-display: swap;
+	src: local(''), url('../fonts/Pretendard-Medium.subset.woff2') format('woff2'), url('../fonts/Pretendard-Medium.subset.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 400;
+	font-display: swap;
+	src: local(''), url('../fonts/Pretendard-Regular.subset.woff2') format('woff2'), url('../fonts/Pretendard-Regular.subset.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 300;
+	font-display: swap;
+	src: local(''), url('../fonts/Pretendard-Light.subset.woff2') format('woff2'), url('../fonts/Pretendard-Light.subset.woff') format('woff');
+}
+    *{margin: 0;padding: 0;}
+    ul{list-style: none;}
+    a{text-decoration: none; color: #000;}
+    p{font-family: Pretendard, sans-serif;}
+    .main{display: flex; max-width: 2560px; width: 100%; margin: 0 auto; justify-content: space-between;}
+    .main .left{width: 45%;position: sticky; top: 108px; height: 100%; margin-left: 100px;}
+    .main .left .top{flex: 1;}
+    .main .left .top p:first-child{color: rgba(0,0,0,0.5); font-size: 22px; font-weight: 500;}
+    .main .left .top p:nth-child(2){font-size: 96px; margin: 16px 0 0; font-weight: bold;}
+    .main .left .top a{border: 2px solid; display: inline-block; padding: 10px 50px 10px 25px; border-radius: 50px; position: relative; font-size: 20px; font-weight: bold;}
+    .main .left .top a::after{content: url(https://www.samwonpaper.com/resources/_asset/pc/common/images/icon/icon-more-long-arrow-black.png); position: absolute; left: 75%; top: 60%; transform: translateY(-60%);}
+
+    .main .right{width: 50%;}
+    .main .right > ul{width: 80%; display: flex; justify-content: space-between;}
+    .main .right > ul > li img{width: 90%; position: relative;}
+    .main .right .txt{background-color: #000;}
+    .main .right .txt p:first-child{color: #ffffff66;}
+    .main .right .txt p:last-child{color: #fff; font-size: 24px; font-weight: bold; margin-top: 4px;}
+
+  </style>
+</head>
+<body>
+  <div class="main">
+    <div class="left">
+      <div class="top">
+        <p>Samwon Gray Paper : 다채로운 매력의 그레이 페이퍼</p>
+        <p>Monthly Paper</p>
+        <a href="#">제품보기</a>
+      </div>
+      <div class="img">
+        <p><img src="https://www.samwonpaper.com/storage/cms/PRODUCTMONTH/202407/d524e42f-a2bd-4a8b-a1ec-3ec4b6da1058.jpg" alt=""></p>
+      </div>
+    </div>
+    <div class="right">
+      <ul>
+        <li>
+          <ul>
+            <li>
+              <p>
+                <a href="#">
+                  <img src="https://www.samwonpaper.com/storage/cms/PACKAGEBOOK/task/SIR-99_MA.png" alt="">
+                  <div class="txt">
+                    <p>시리오러프</p>
+                    <p>시리오러프</p>
+                  </div>
+                </a>
+              </p>
+            </li>
+            <li>
+              <p>
+                <a href="#">
+                  <img src="https://www.samwonpaper.com/storage/cms/PACKAGEBOOK/task/MTRC-99_MA.png" alt="">
+                  <div class="txt">
+                    <p>마테리카</p>
+                    <p>마테리카</p>
+                  </div>
+                </a>
+              </p>
+            </li>
+            <li>
+              <p>
+                <a href="#">
+                  <img src="https://www.samwonpaper.com/storage/cms/PACKAGEBOOK/task/SKIN-99_MA.png" alt="">
+                  <div class="txt">
+                    <p>큐리어스 스킨</p>
+                    <p>큐리어스 스킨</p>
+                  </div>
+                </a>
+              </p>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <ul>
+            <li>
+              <p>
+                <a href="#">
+                  <img src="https://www.samwonpaper.com/storage/cms/PACKAGEBOOK/task/MOON-99_MA.png" alt="">
+                  <div class="txt">
+                    <p>문보드</p>
+                    <p>문보드</p>
+                  </div>
+                </a>
+              </p>
+            </li>
+            <li>
+              <p>
+                <a href="#">
+                  <img src="https://www.samwonpaper.com/storage/cms/PACKAGEBOOK/task/RMK-99_MA.png" alt="">
+                  <div class="txt">
+                    <p>리메이크</p>
+                    <p>리메이크</p>
+                  </div>
+                </a>
+              </p>
+            </li>
+            <li>
+              <p>
+                <a href="#">
+                  <img src="https://www.samwonpaper.com/storage/cms/PACKAGEBOOK/task/CMT-99_MA.png" alt="">
+                  <div class="txt">
+                    <p>큐리어스 매터</p>
+                    <p>큐리어스 매터</p>
+                  </div>
+                </a>
+              </p>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
