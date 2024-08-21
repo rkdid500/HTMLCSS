@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{margin: 0;padding: 0;}
+    section{height: 100vh;display: flex; justify-content: center; align-items: center;}
+    section.bg{background:rgba(0,0,0,0.8);}
+    section p{width: 100px; line-height: 50px;text-align: center; cursor: pointer; font-size: 20px; background: rgba(0,0,0,0.5); color: #fff;}
+    section p.on{background: rgba(255,255,255,0.5); color: red;}
+    section p a{text-decoration: none; color: #000;}
+  </style>
+</head>
+<body>
+  <section>
+    <p><a href="#">클릭</a></p>
+  </section>
+  <script>
+    // this는 맨 첫 줄에 있는 대상을 말함
+
+    // document.querySelector("section>p").onclick = function(){
+    //   // console.log("실행됨");
+    //   document.querySelector("section").style.background = "rgba(0,0,0,0.8)";
+    //   //document.querySelector("section>p").style.background = "rgba(255,255,255,0.5)";
+    //   // this.style.background = "rgba(255,255,255,0.5)";
+    //   // this.style.color = "red";
+    //   // this.classList.add("on");
+    //   this.classList.toggle("on");
+  // }
+// toggle은 속성을 다 한번 씩 적용 가능 (넣었다 뺐다 가능)
+
+      let btn = document.querySelector("section>p");
+      let sec = document.querySelector("section");
+      btn.onclick = function(e){
+        e.preventDefault();
+        sec.classList.toggle("bg");
+        this.classList.toggle("on");
+      }
+  </script>
+</body>
+</html>
