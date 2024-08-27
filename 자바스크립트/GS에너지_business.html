@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{margin:0;padding: 0;}
+    ul{list-style: none;}
+    a{text-decoration: none; color: #000;font-size: 32px; font-weight: bold;}
+    .wrap{max-width: 1520px; width: 100%; height: 121px; margin: 50px auto;}
+    .wrap a{border-bottom: 1px solid #ddd; padding: 50px; line-height: 40px;position: relative; display: block;}
+    .wrap a:first-child{border-top: 1px solid #000;}
+    .wrap a::after{content: "+"; position: absolute; left: 90%; font-size: 50px;}
+  </style>
+</head>
+<body>
+      <div class="wrap">
+          <a href="#">GS파워
+            <img src="https://www.gsenergy.co.kr/pub/images/img_collective_a01.jpg" alt="">
+        </a>
+          <a href="#">인천종합에너지
+            <img src="https://www.gsenergy.co.kr/pub/images/img_collective_b01.jpg" alt="">
+          </a>
+      </div>
+  <script>
+    let btn = document.querySelectorAll(".wrap a");
+    let img = document.querySelector(".wrap img");
+    img.style.display = "none";
+    btn.addEventListener("click",function(e){
+      e.preventDefault();
+      img.style.display = "block";
+    })
+    
+
+  </script>
+</body>
+</html>
