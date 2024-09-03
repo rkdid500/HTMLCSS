@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <input type="text" id="fname">
+  <script>
+    let x = document.getElementById("fname")
+  //   x.onchange = function(){
+  //     let xvlaule = this.value.toUpperCase();
+  //     console.log(xvlaule);
+  //   }
+  //키보드의 키를 눌렀을 때 발생하는 이벤트
+  //keydown, keypress 키를 누르고 있을때도 이벤트 발생
+  //keypress는 alt, ctrl,  반향키도 keyCode 값 반환 안됨
+  // x.onkeydown = function(e){
+  //   console.log(e.keyCode);
+  // }
+  // x.onkeypress = function(e){
+  //   console.log(e.keyCode);
+  // }
+  x.onkeyup = function(e){
+    console.log(e.keyCode);
+  }
+  //keyup은 키보드의 키를 누르고 뗐을때만 이벤트가 발생 됨 (꾹 누르고 있으면 안됨)
+  </script>
+</body>
+</html>
