@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>jquery</title>
+  <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+  <script>
+        $(function(){
+      $("p:nth-child(2)").css("color","red");
+      $("p:nth-child(3)").css("display","none");
+      $("p:nth-child(3)").css("display","");
+      $("p:nth-child(4)").hide(); //hide는 눈에 안보이는 거 없애는 것
+      $("p:nth-child(4)").show(); //show는 보이는 거 다시 생기는 것
+      let node = $("#demo").parent().prop("nodeName");
+      console.log(node);
+    });
+  </script>
+</head>
+<body>
+  <p id="demo">jquery</p>
+  <p>하나</p>
+  <p>둘</p>
+  <p>셋</p>
+  <p>넷</p>
+  <!-- <script>
+    let pele = document.querySelectorAll("p");
+    pele.forEach(function(v,k){
+      v.style.color = "red";
+      v.style.fontSize = "32px";
+    })
+  </script> -->
+</body>
+</html>
