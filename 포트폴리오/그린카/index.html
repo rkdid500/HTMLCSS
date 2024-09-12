@@ -6,7 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>롯데렌터카 G car</title>
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="js/car.js">
+  <!-- <link rel="stylesheet" href="js/car.js"> -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 <body>
   <div class="car">
@@ -14,9 +15,6 @@
       <div class="logo">
         <p><img src="./images/로고화이트.png" alt=""></p>
       </div>
-      <!-- <div class="white">
-        <p><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></p>
-      </div> -->
     </div>
     <div class="bg">
       <p><img src="./images/temp_main_pc_gcar.50b686704eb8f513a1ea.png" alt=""></p>
@@ -55,5 +53,21 @@
       <div class="con2"></div>
     </div>
   </div>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        direction: "vertical",
+        slidesPerView: 1,
+        spaceBetween: 30,
+        mousewheel: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
 </body>
 </html>

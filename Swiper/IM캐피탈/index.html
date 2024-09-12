@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IM캐피탈</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="">
+</head>
+<body>
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="text">
+          <p>CREDIT LOAN</p>
+          <p>개인신용대출</p>
+          <p>똑똑하고 친절한 개인금융</p>
+          <a href="#">
+              <img src="images/ico_move.png" alt="">
+            </a>
+        </div>
+        <img src="images/main_obj_01.png" alt="">
+      </div>
+      <div class="swiper-slide">
+        <div class="text">
+          <p>AUTO FINANCE</p>
+          <p>자동차 금융</p>
+          <p>빠르고 편리한 금융</p>
+            <a href="#">
+              <img src="images/ico_move.png" alt="">
+            </a>
+        </div>
+        <img src="images/main_obj_02.png" alt="">
+        </div>
+      <div class="swiper-slide">
+        <div class="text">
+          <p>SECURED</p>
+          <p>담보대출</p>
+          <p>똑똑하고 친절한 개인금융</p>
+            <a href="#">
+              <img src="images/ico_move.png" alt="">
+            </a>
+        </div>
+        <img src="images/main_obj_03.png" alt="">
+        </div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+  <!-- <div class="swiper-pagination"></div> -->
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      speed: 1000,
+      loop:true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+</body>
+</html>

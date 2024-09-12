@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>롯데렌터카 G car</title>
+  <link rel="stylesheet" href="css/style.css">
+  <!-- <link rel="stylesheet" href="js/car.js"> -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+<body>
+  <div class="car">
+    <div class="head">
+      <div class="logo">
+        <p><img src="./images/로고화이트.png" alt=""></p>
+      </div>
+    </div>
+    <div class="bg">
+      <p><img src="./images/temp_main_pc_gcar.50b686704eb8f513a1ea.png" alt=""></p>
+    </div>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class=text>
+              <p>#필요한만큼만</p>
+              <p>30분 부터 10분 단위로<br>내가 필요한 딱 그만큼만 빌리세요</p>
+            </div>
+            <img src="./images/img1.png" alt="">
+          </div>
+          <div class="swiper-slide">
+            <div class=text>
+              <p>#필요한만큼만</p>
+              <p>30분 부터 10분 단위로<br>내가 필요한 딱 그만큼만 빌리세요</p>
+            </div>
+            <img src="./images/img2.png" alt="">
+          </div>
+          <div class="swiper-slide">
+            <div class=text>
+              <p>#필요한만큼만</p>
+              <p>30분 부터 10분 단위로<br>내가 필요한 딱 그만큼만 빌리세요</p>
+            </div>
+            <img src="./images/img3.png" alt="">
+          </div>
+          <div class="swiper-slide">
+            <div class=text>
+              <p>#필요한만큼만</p>
+              <p>30분 부터 10분 단위로<br>내가 필요한 딱 그만큼만 빌리세요</p>
+            </div>
+            <img src="./images/img4.png" alt="">
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">Slide 1</div>
+          <div class="swiper-slide">Slide 2</div>
+          <div class="swiper-slide">Slide 3</div>
+          <div class="swiper-slide">Slide 4</div>
+          <div class="swiper-slide">Slide 5</div>
+          <div class="swiper-slide">Slide 6</div>
+          <div class="swiper-slide">Slide 7</div>
+          <div class="swiper-slide">Slide 8</div>
+          <div class="swiper-slide">Slide 9</div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+  </div>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        direction: "vertical",
+        slidesPerView: 1,
+        spaceBetween: 30,
+        mousewheel: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
+</body>
+</html>
