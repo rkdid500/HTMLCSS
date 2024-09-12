@@ -30,29 +30,29 @@
           </div>
           <div class="swiper-slide">
             <div class=text>
-              <p>#필요한만큼만</p>
-              <p>30분 부터 10분 단위로<br>내가 필요한 딱 그만큼만 빌리세요</p>
+              <p>#내주위어디든</p>
+              <p>G car Zone을 찾을 필요가 없어요.<br>내 주위 3분 거리 어디에나 있어요.</p>
             </div>
             <img src="./images/img2.png" alt="">
           </div>
           <div class="swiper-slide">
             <div class=text>
-              <p>#필요한만큼만</p>
-              <p>30분 부터 10분 단위로<br>내가 필요한 딱 그만큼만 빌리세요</p>
+              <p>#다양한차종</p>
+              <p>60여 종 이상 전기차,수입차까지<br>지루할 틈 없이 골라 탈 수 있어요.</p>
             </div>
             <img src="./images/img3.png" alt="">
           </div>
           <div class="swiper-slide">
             <div class=text>
-              <p>#필요한만큼만</p>
-              <p>30분 부터 10분 단위로<br>내가 필요한 딱 그만큼만 빌리세요</p>
+              <p>#간편하게</p>
+              <p>예약부터 차량 이용까지<br>스마트폰으로 간편하게 이용하세요.</p>
             </div>
             <img src="./images/img4.png" alt="">
           </div>
         </div>
-        <div class="swiper-pagination"></div>
+        <!-- <div class="swiper-pagination"></div> -->
       </div>
-      <div class="swiper mySwiper">
+      <!-- <div class="swiper mySwiper">
         <div class="swiper-wrapper">
           <div class="swiper-slide">Slide 1</div>
           <div class="swiper-slide">Slide 2</div>
@@ -65,7 +65,7 @@
           <div class="swiper-slide">Slide 9</div>
         </div>
         <div class="swiper-pagination"></div>
-      </div>
+      </div> -->
   </div>
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
@@ -73,14 +73,15 @@
     <!-- Initialize Swiper -->
     <script>
       var swiper = new Swiper(".mySwiper", {
-        direction: "vertical",
+        speed:1000,
+        direction: "horizontal",
         slidesPerView: 1,
         spaceBetween: 30,
         mousewheel: true,
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
+        // pagination: {
+        //   el: ".swiper-pagination",
+        //   clickable: true,
+        // },
       });
     </script>
 </body>
