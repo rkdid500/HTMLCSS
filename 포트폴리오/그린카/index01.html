@@ -6,7 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>롯데렌터카 G car</title>
   <link rel="stylesheet" href="css/style.css">
-  <!-- <link rel="stylesheet" href="js/car.js"> -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 <body>
@@ -18,55 +17,41 @@
     </div>
     <div class="bg">
       <p><img src="./images/temp_main_pc_gcar.50b686704eb8f513a1ea.png" alt=""></p>
-    </div>
-      <div class="swiper mySwiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <div class=text>
-              <p>#필요한만큼만</p>
-              <p>30분 부터 10분 단위로<br>내가 필요한 딱 그만큼만 빌리세요</p>
-            </div>
-            <img src="./images/img1.png" alt="">
+    </div> 
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+          <div class=text>
+            <p>#필요한만큼만</p>
+            <p>30분 부터 10분 단위로<br>내가 필요한 딱 그만큼만 빌리세요</p>
           </div>
-          <div class="swiper-slide">
-            <div class=text>
-              <p>#내주위어디든</p>
-              <p>G car Zone을 찾을 필요가 없어요.<br>내 주위 3분 거리 어디에나 있어요.</p>
-            </div>
-            <img src="./images/img2.png" alt="">
-          </div>
-          <div class="swiper-slide">
-            <div class=text>
-              <p>#다양한차종</p>
-              <p>60여 종 이상 전기차,수입차까지<br>지루할 틈 없이 골라 탈 수 있어요.</p>
-            </div>
-            <img src="./images/img3.png" alt="">
-          </div>
-          <div class="swiper-slide">
-            <div class=text>
-              <p>#간편하게</p>
-              <p>예약부터 차량 이용까지<br>스마트폰으로 간편하게 이용하세요.</p>
-            </div>
-            <img src="./images/img4.png" alt="">
-          </div>
-        </div>
-        <!-- <div class="swiper-pagination"></div> -->
+          <img src="./images/img1.png" alt="">
       </div>
-      <!-- <div class="swiper mySwiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">Slide 1</div>
-          <div class="swiper-slide">Slide 2</div>
-          <div class="swiper-slide">Slide 3</div>
-          <div class="swiper-slide">Slide 4</div>
-          <div class="swiper-slide">Slide 5</div>
-          <div class="swiper-slide">Slide 6</div>
-          <div class="swiper-slide">Slide 7</div>
-          <div class="swiper-slide">Slide 8</div>
-          <div class="swiper-slide">Slide 9</div>
+      <div class="swiper-slide">
+        <div class=text>
+          <p>#내주위어디든</p>
+          <p>G car Zone을 찾을 필요가 없어요.<br>내 주위 3분 거리 어디에나 있어요.</p>
         </div>
-        <div class="swiper-pagination"></div>
-      </div> -->
+        <img src="./images/img2.png" alt="">
+      </div>
+      <div class="swiper-slide">
+        <div class=text>
+          <p>#다양한차종</p>
+          <p>60여 종 이상 전기차,수입차까지<br>지루할 틈 없이 골라 탈 수 있어요.</p>
+        </div>
+        <img src="./images/img3.png" alt="">
+      </div>
+      <div class="swiper-slide">
+        <div class=text>
+          <p>#간편하게</p>
+          <p>예약부터 차량 이용까지<br>스마트폰으로 간편하게 이용하세요.</p>
+        </div>
+        <img src="./images/img4.png" alt="">
+      </div>
+    </div>
+    <!-- <div class="swiper-pagination"></div> -->
   </div>
+</div>
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
@@ -74,7 +59,7 @@
     <script>
       var swiper = new Swiper(".mySwiper", {
         speed:1000,
-        direction: "horizontal",
+        // direction: "horizontal",
         slidesPerView: 1,
         spaceBetween: 30,
         mousewheel: true,
