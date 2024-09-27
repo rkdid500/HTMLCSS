@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{margin: 0;padding: 0;}
+    body{background-color: #111;color: #fff;}
+    #parallax{overflow: hidden;}
+    .item{position: relative; height: 100vh; display: flex; justify-content: center; align-items: center;}
+    section:nth-child(2n){background-color: #222;}
+    .num{position: absolute; right: 20px; bottom: 20px; font-size: 5vw;}
+    .item_img{width: 10vw;height: 10vw; background-color: #fff; background-size: cover; background-position: center; margin: 1vw;}
+    #section1 .item_img{background-image: url(https://cdn.pixabay.com/photo/2024/09/17/15/23/halloween-9053945_1280.jpg);}
+    #section2 .item_img{background-image: url(https://cdn.pixabay.com/photo/2022/11/02/14/47/bird-7565103_1280.jpg);}
+    #section3 .item_img{background-image: url(https://cdn.pixabay.com/photo/2023/10/12/08/23/bird-8310172_1280.png); width: 100px;height: 100px; border-radius: 50px;}
+    #section4 .item_img{background-image: url(https://cdn.pixabay.com/photo/2023/09/29/14/58/road-8284023_1280.jpg);}
+    #section8 .item_img{background-image: url(https://cdn.pixabay.com/photo/2023/10/24/05/08/dog-8337394_1280.jpg);}
+    #section9 .item_img{background-image: url(https://cdn.pixabay.com/photo/2018/10/01/09/21/pets-3715733_1280.jpg);}
+    .item_text{font-size: 5vw;}
+    #section7 .item_text{position: absolute;left: 50%;top: 50%; transform: translate(-50%,-50%); background-color: #111; padding: 30px; text-align: center; width: 100%; opacity: 0;}
+    #section5,#section8{flex-direction: column;}
+    #section9 .item_img{border-radius: 50%;} 
+  </style>
+</head>
+<body>
+  <main id="parallax">
+    <section id="section1" class="item">
+      <div class="num">01</div>
+      <div class="item_img"></div>
+    </section>
+    <section id="section2" class="item">
+      <div class="num">02</div>
+      <div class="item_img i1"></div>
+      <div class="item_img i2"></div>
+      <div class="item_img i3"></div>
+    </section>
+    <section id="section3" class="item">
+      <div class="num">03</div>
+      <div class="item_img"></div>
+      <div class="item_img"></div>
+      <div class="item_img"></div>
+      <div class="item_img"></div>
+      <div class="item_img"></div>
+      <div class="item_img"></div>
+    </section>
+    <section id="section4" class="item">
+      <div class="num">04</div>
+      <div class="item_img"></div>
+    </section>
+    <section id="section5" class="item">
+      <div class="num">05</div>
+      <div class="item_text t1">section5</div>
+      <div class="item_text t2">section5</div>
+      <div class="item_text t3">section5</div>
+      <div class="item_text t4">section5</div>
+    </section>
+    <section id="section6" class="item">
+      <div class="num">06</div>
+      <div class="item_text">section6</div>
+    </section>
+    <section id="section7" class="item">
+      <div class="num">07</div>
+      <div class="item_text t1">코딩이란</div>
+      <div class="item_text t2">프로그래밍 코드를</div>
+      <div class="item_text t3">어딘가에</div>
+      <div class="item_text t4">적는것을 말한다</div>
+      <div class="item_text t5">코딩은</div>
+      <div class="item_text t6">누구나</div>
+      <div class="item_text t7">할 수 있다</div>
+    </section>
+    <section id="section8" class="item">
+      <div class="num">08</div>
+      <div class="item_text t1">section8 title1</div>
+      <div class="item_text t2">section8 title2</div>
+      <div class="item_text t3">section8 title3</div>
+      <div class="item_img i1"></div>
+    </section>
+    <section id="section9" class="item">
+      <div class="num">09</div>
+      <div class="item_img i1"></div>
+    </section>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+
+  <script>
+    const ani1 = gsap.timeline();
+    ani1.to("#section1 .item_img",{
+      rotation:720,
+      scale:0,
+      borderRadius:200,
+    }).to("#section1 .item_img",{
+      rotation:0,
+      scale:1,
+      borderRadius:20,
+    });
+    ScrollTrigger.create({
+      animation:ani1,
+      trigger:"#section1", //누구를 고정 할 것인지
+      //markers:true, //마커스는 스타트 , 엔드 표시됨 (한번밖에 사용 불가능!)
+      start:"top top", //마커스 좌표 스타트와 엔드가 만나면 애니메이션 종료되고 다음 컨텐츠로 넘어감
+      // end:"+=2000",
+      pin:true,  //pin은 고정
+      scrub:true,  // 스크롤 = 스크롤로 움직임 주는 것 - 숫자로 주면 빠르고 느리게 가능
+      id:"box1",
+      anticipatePin:1,
+    });
+
+    const ani2 = gsap.timeline({
+      defaults:{autoAlpha:0, //opacity를 주는 메소드 = 같은것들은 디폴트스에 넣어서 하면 됨
+      borderRadius:200,}
+    });
+    ani2.from("#section2 .i1",{
+      y:-100,
+    }).from("#section2 .i2",{
+      y:100,
+    }).from("#section2 .i3",{
+      y:-100,
+    });
+    ScrollTrigger.create({
+      animation:ani2,
+      trigger:"#section2",
+      //markers:true, 
+      start:"top top", 
+      // end:"+=2000",
+      pin:true,
+      scrub:true,
+      id:"box1",
+      anticipatePin:1,
+    });
+
+    const ani3 = gsap.timeline();
+    ani3.from("#section3 .item_img",{
+      y:-100,
+      opacity:0,
+      stagger:{
+        amount:3,
+        from:"random", //랜덤으로 컨첸츠가 내려옴
+      }
+    });
+    ScrollTrigger.create({
+      animation:ani3,
+      trigger:"#section3",
+      //markers:true, 
+      start:"top top", 
+      // end:"+=2000",
+      pin:true,
+      scrub:1,
+      id:"box1",
+      anticipatePin:1,
+    });
+
+    const ani4 = gsap.timeline();
+    ani4.from("#section4 .item_img",{
+      scale:5,
+      opacity:0,
+      width:"100vw",
+      height:"100vh "
+    });
+    ScrollTrigger.create({
+      animation:ani4,
+      trigger:"#section4",
+      //markers:true, 
+      start:"top top", 
+      // end:"+=2000",
+      pin:true,
+      scrub:1,
+      id:"box1",
+      anticipatePin:1,
+    });
+
+    const ani5 = gsap.timeline();
+    ani5.to("#section5 .t1",{
+      xPercent:300, //x퍼센트 라고 적은거임 %
+    },"txt").to("#section5 .t2",{
+      xPercent:-300,
+    },"txt").to("#section5 .t3",{
+      xPercent:300,
+    },"txt").to("#section5 .t4",{
+      xPercent:-300,
+    },"txt")                          //,"txt"라고 문자를 동일하게 넣었음 동일한 문자를 넣으면 !동시에 작용함!
+    ScrollTrigger.create({
+      animation:ani5,
+      trigger:"#section5",
+      //markers:true, 
+      start:"top top", 
+      // end:"+=2000",
+      pin:true,
+      scrub:1,
+      id:"box1",
+      anticipatePin:1,
+    });
+
+    const ani6 = gsap.timeline();
+    ani6.to("#section6 .item_text",{
+      scale:60,
+    }).to("#section6 .item_text",{
+      opacity:0,  
+    })
+    ScrollTrigger.create({
+      animation:ani6,
+      trigger:"#section6",
+      //markers:true, 
+      start:"top top", 
+      // end:"+=2000",
+      pin:true,
+      scrub:1,
+      id:"box1",
+      anticipatePin:1,
+    });
+
+    const ani7 = gsap.timeline({
+      defaults:{scale:0,opacity:1}
+    });
+    ani7.from("#section7 .t1",{})
+    ani7.from("#section7 .t2",{})
+    ani7.from("#section7 .t3",{})
+    ani7.from("#section7 .t4",{})
+    ani7.from("#section7 .t5",{})
+    ani7.from("#section7 .t6",{})
+    ani7.from("#section7 .t7",{})
+    ScrollTrigger.create({
+      animation:ani7,
+      trigger:"#section7",
+      //markers:true, 
+      start:"top top", 
+      // end:"+=2000",
+      pin:true,
+      scrub:1,
+      id:"box1",
+      anticipatePin:1,
+    });
+
+    const ani8 = gsap.timeline();
+    ani8.from("#section8 .t1",{x:innerWidth*1}) //보여지는 너비만큼 곱하기 X1 연산자도 가능
+    ani8.from("#section8 .t2",{x:innerWidth*-1})
+    ani8.from("#section8 .t3",{x:innerWidth*1})
+    ani8.from("#section8 .i1",{x:innerWidth*1,rotation:360,scale:5, borderRadius:100});
+    ScrollTrigger.create({
+      animation:ani8,
+      trigger:"#section8",
+      //markers:true, 
+      start:"top top", 
+      // end:"+=2000",
+      pin:true,
+      scrub:1,
+      id:"box1",
+      anticipatePin:1,
+    });
+
+    const ani9 = gsap.timeline();
+    ani9.to("#section9 .i1",{scale:20,})
+    ScrollTrigger.create({
+      animation:ani9,
+      trigger:"#section9",
+      //markers:true, 
+      start:"top top", 
+      // end:"+=2000",
+      pin:true,
+      scrub:1,
+      id:"box1",
+      anticipatePin:1,
+    });
+  </script>
+</body>
+</html>
